@@ -1,0 +1,79 @@
+.prijavaWrapper,
+.registracijaWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prijavaWrapper .glava,
+.registracijaWrapper .glava {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.prijavaWrapper .glava button,
+.registracijaWrapper .glava button {
+    padding: 10px 30px;
+    margin: 20px 20px 0 0;
+}
+
+.prijavaWrapper .prijavaForma,
+.registracijaWrapper .registracijaForma {
+    background-color: #B8B6FF;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+}
+
+.prijavaWrapper .prijavaForma h1,
+.registracijaWrapper .registracijaForma h1 {
+    color: #12142A;
+}
+
+.prijavaWrapper .prijavaForma form,
+.registracijaWrapper .registracijaForma form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.prijavaWrapper .prijavaForma form input,
+.registracijaWrapper .registracijaForma form input {
+    margin-bottom: 20px;
+    border: 2px solid #12142A;
+    background-color: #B8B6FF;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: #12142A;
+}
+
+.prijavaWrapper .prijavaForma form input:focus,
+.registracijaWrapper .registracijaForma form input:focus {
+    background-color: #12142A;
+    color: #B8B6FF;
+}
+
+.prijavaWrapper .prijavaForma form button,
+.registracijaWrapper .registracijaForma form button {
+    margin-bottom: 20px;
+    border: 2px solid #12142A;
+    background-color: #12142A;
+    padding: 10px 10px;
+    color: #B8B6FF;
+}
+
+.prijavaWrapper .prijavaForma form button:focus,
+.registracijaWrapper .registracijaForma form button:focus {
+    background-color: #B8B6FF;
+    color: #12142A;
+}

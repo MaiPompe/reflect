@@ -1,0 +1,17 @@
+.nogaWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background-color: #B8B6FF;
+    border-radius: 10px;
+    opacity: 50%;
+}
+
+.nogaWrapper:hover {
+    opacity: 100%;
+}

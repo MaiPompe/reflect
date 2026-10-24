@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    background-color: #12142A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    background-color: #B8B6FF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #B8B6FF;
+}
+
+a {
+    color: #12142A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.domovWrapper,
+.statistikeWrapper,
+.novVnosWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+
+.današnjiVpisi,
+.vnosiVDnevnik,
+.počutje,
+.kategorija,
+.opombe,
+.čas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}

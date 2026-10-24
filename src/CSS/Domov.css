@@ -1,0 +1,35 @@
+.domovWrapper .dodajKDnevnikuWrapper {
+    width: 80%;
+}
+
+.domovWrapper .dodajKDnevnikuWrapper button {
+    padding: 50px;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.domovWrapper .dodajKDnevnikuWrapper button:focus {
+    background-color: #12142A;
+    color: #B8B6FF;
+    border: 2px solid #B8B6FF;
+}
+
+.domovWrapper .današnjiVpisi table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 18px;
+    color: #B8B6FF;
+}
+
+.domovWrapper .današnjiVpisi table thead th {
+    background-color: #B8B6FF;
+    color: #12142A;
+}
+
+.domovWrapper .današnjiVpisi table tbody th,
+.domovWrapper .današnjiVpisi table thead th {
+    border: 2px solid #B8B6FF;
+    padding: 10px 0px;
+}
+
