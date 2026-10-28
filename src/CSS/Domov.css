@@ -1,35 +1,164 @@
-.domovWrapper .dodajKDnevnikuWrapper {
-    width: 80%;
-}
-
-.domovWrapper .dodajKDnevnikuWrapper button {
-    padding: 50px;
-    font-size: 20px;
+.domovWrapper {
     width: 100%;
-    margin-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.domovWrapper .dodajKDnevnikuWrapper button:focus {
+.domovWrapper .glavaDomov{
+    background: linear-gradient(to bottom right, #12142A, #12142A, #B8B6FF);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.domovWrapper .glavaDomov #datum {
+    align-self: flex-start;
+    color: #B8B6FF80;
+    padding-left: 5%;
+}
+
+.domovWrapper .glavaDomov img {
+    position: absolute;
+    right: -75px;
+    top: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+.domovWrapper .statistike {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.domovWrapper .statistike .današnjiVpis,
+.domovWrapper .statistike .današnjePočutje {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    background-color: #12142ABF;
+    border: 1px solid #B8B6FF80;
+    border-radius: 10px;
+} 
+
+.domovWrapper .statistike .današnjiVpis h1,
+.domovWrapper .statistike .današnjePočutje h1 {
+    color: #B8B6FF;
+    margin: 0;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 50px;
+    display: flex;
+}
+
+.domovWrapper .statistike .današnjePočutje h1 #od5 {
+    font-size: 20px;
+    color: #B8B6FF80;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.domovWrapper .statistike .današnjiVpis p,
+.domovWrapper .statistike .današnjePočutje p {
+    color: #B8B6FF80;
+    padding-left: 20px;
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+.domovWrapper .današnjiVpisi {
+    background-color: #B8B6FF;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    z-index: 1;
+    margin-top: -30px;
+    flex-grow: 1;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.domovWrapper .današnjiVpisi .glavaDanašnjiVpisi {
+    color: #12142A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.domovWrapper .današnjiVpisi .glavaDanašnjiVpisi h1 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.domovWrapper .današnjiVpisi .glavaDanašnjiVpisi p {
+    border: 1px solid #12142A;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.domovWrapper .današnjiVpisi .vpis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border: 2px solid #12142A;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.domovWrapper .današnjiVpisi .vpis .uraVpisa {
+    background-color: #12142A;
+    margin-left: 10px;
+    color: #B8B6FF;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.domovWrapper .današnjiVpisi .vpis .kategorijaPočutjeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.domovWrapper .današnjiVpisi .vpis .kategorijaPočutjeWrapper p {
+    margin: 0;
+}
+
+.domovWrapper .današnjiVpisi .vpis .kategorijaPočutjeWrapper .kategorijaVpisa {
+    font-weight: 900;
+    font-size: 15px;
+    margin-left: -110px;
+}
+
+.domovWrapper .današnjiVpisi .vpis .kategorijaPočutjeWrapper .počutjeVpisa {
+    font-size: 15px;
+    margin-left: -110px;
+}
+
+.domovWrapper .današnjiVpisi .vpis .izbrišiVnos {
+    margin-right: 20px;
+}
+
+.domovWrapper .današnjiVpisi button {
     background-color: #12142A;
     color: #B8B6FF;
-    border: 2px solid #B8B6FF;
+    width: 90%;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 900;
+    margin: 20px 0;
 }
-
-.domovWrapper .današnjiVpisi table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 18px;
-    color: #B8B6FF;
-}
-
-.domovWrapper .današnjiVpisi table thead th {
-    background-color: #B8B6FF;
-    color: #12142A;
-}
-
-.domovWrapper .današnjiVpisi table tbody th,
-.domovWrapper .današnjiVpisi table thead th {
-    border: 2px solid #B8B6FF;
-    padding: 10px 0px;
-}
-

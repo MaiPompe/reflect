@@ -1,5 +1,239 @@
-.grafVnosov {
+.statistikeWrapper {
     width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.statistikeWrapper .glavaStatistike{
+    background: linear-gradient(to bottom right, #12142A, #12142A, #B8B6FF);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.statistikeWrapper .glavaStatistike #datum {
+    align-self: flex-start;
+    color: #B8B6FF80;
+    padding-left: 5%;
+    margin-bottom: 30px;
+}
+
+.statistikeWrapper .glavaStatistike img {
+    position: absolute;
+    right: -75px;
+    top: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+.statistikeWrapper .statistikePovzetek {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.statistikeWrapper .statistikePovzetek .tedenskiVpis {
+    border-right: 2px solid #B8B6FF80;
+}
+
+.statistikeWrapper .statistikePovzetek .tedenskiVpis,
+.statistikeWrapper .statistikePovzetek .tedenskoPočutje {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-right: 40px;
+} 
+
+.statistikeWrapper .statistikePovzetek .tedenskiVpis h1,
+.statistikeWrapper .statistikePovzetek .tedenskoPočutje h1 {
+    color: #B8B6FF;
+    margin: 0;
+    padding-left: 20px;
+    margin-top: -10px;
+    font-weight: 900;
+    font-size: 50px;
+    display: flex;
+}
+
+.statistikeWrapper .statistikePovzetek .tedenskoPočutje h1 #od5 {
+    font-size: 20px;
+    color: #B8B6FF80;
+    padding-top: 30px;
+    margin: 0;
+}
+
+.statistikeWrapper .statistikePovzetek .tedenskiVpis p,
+.statistikeWrapper .statistikePovzetek .tedenskoPočutje p {
+    color: #B8B6FF;
+    padding-left: 20px;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.statistikeWrapper .vnosiVDnevnik {
+    background-color: #B8B6FF;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    z-index: 1;
+    margin-top: -30px;
+    flex-grow: 1;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.statistikeWrapper .vnosiVDnevnik .vnosiPočutje {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid #12142A;
+}
+
+.statistikeWrapper .vnosiVDnevnik .vnosiPočutje button {
+    border-radius: 18px;
+    padding: 15px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B8B6FF;
+    color: #12142A;
+}
+
+.statistikeWrapper .vnosiVDnevnik .vnosiPočutje button {
+    background-color: transparent;
+    color: #12142A;
+}
+
+.statistikeWrapper .vnosiVDnevnik .vnosiPočutje button.aktiven {
+    background-color: #12142A;
+    color: #B8B6FF;
+}
+
+.statistikeWrapper .vnosiVDnevnik .grafi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-radius: 10px;
     height: 300px;
     margin: 40px 0;
+    padding: 0px 0;
+    background-color: #12142A;
+}
+
+.statistikeWrapper .vnosiVDnevnik .grafi .glavaGrafa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    color: #B8B6FF;
+}
+
+.statistikeWrapper .vnosiVDnevnik .grafi svg {
+    margin-left: -20px;
+}
+
+.statistikeWrapper .vnosiVDnevnik .počutjePoDnevih {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.statistikeWrapper .vnosiVDnevnik .počutjePoDnevih .dnevi {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    text-align: center;
+}
+
+.statistikeWrapper .vnosiVDnevnik .počutjePoDnevih h2 {
+    color: #12142A;
+    align-self: flex-start;
+    margin-left: 2%;
+    margin-top: 0;
+}
+
+.statistikeWrapper .vnosiVDnevnik .počutjePoDnevih .dan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistikeWrapper .vnosiVDnevnik .počutjePoDnevih .krog {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #12142A;
+    color: #B8B6FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistikeWrapper .vnosiVDnevnik .počutjePoDnevih .krog.prazen {
+    background-color: transparent;
+    border: 2px dashed #12142A80;
+    box-sizing: border-box;
+}
+
+.statistikeWrapper .vnosiVDnevnik .počutjePoDnevih .dan p {
+    margin: 6px 0 0;
+    font-size: 12px;
+    color: #12142A;
+}
+
+.statistikeWrapper .vnosiVDnevnik .najpogostejšeKategorije {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+}
+
+.statistikeWrapper .vnosiVDnevnik .najpogostejšeKategorije .kategorija {
+    width: 100%;
+    margin-top: 0;
+}
+
+.statistikeWrapper .vnosiVDnevnik .najpogostejšeKategorije .kategorija .kategorijaGlava {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.statistikeWrapper .vnosiVDnevnik .najpogostejšeKategorije h2 {
+    color: #12142A;
+    margin-bottom: 0;
+}
+
+.statistikeWrapper .vnosiVDnevnik .najpogostejšeKategorije .črtaUporabe {
+    display: flex;
+    width: 100%;
+    height: 10px;
+    border: 2px solid #12142A;
+    border-radius: 10px;
+    margin-top: -10px;
+    overflow: hidden;
+}
+
+.statistikeWrapper .vnosiVDnevnik .najpogostejšeKategorije .črtaUporabe .polnilo {
+    height: 100%;
+    background-color: #12142A;
+    transition: width 0.5s;
 }

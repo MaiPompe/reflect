@@ -1,0 +1,32 @@
+.glavaWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 25px 25px 25px;
+    z-index: 100;
+}
+
+.glavaWrapper .pozdrav p {
+    color: #B8B6FF80;
+    margin: 0;
+}
+
+.glavaWrapper .pozdrav p:last-child {
+    color: #B8B6FF;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.glavaWrapper a {
+    color: #B8B6FF;
+    border: 2px solid #B8B6FF;
+    padding: 3px 10px;
+    border-radius: 100%;
+    font-size: 25px;
+}
+
+.glavaWrapper a:focus {
+    background-color: #B8B6FF;
+    color: #12142A;
+}

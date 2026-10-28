@@ -1,0 +1,145 @@
+.profilWrapper {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.profilWrapper .osnovniPodatki {
+    background: linear-gradient(to bottom right, #12142A, #12142A, #B8B6FF);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profilWrapper .osnovniPodatki img {
+    position: absolute;
+    top: -25px;
+    width: 350px;
+    height: 350px;
+}
+
+.profilWrapper .osnovniPodatki p {
+    z-index: 1;
+    color: #B8B6FF;
+}
+
+.profilWrapper .osnovniPodatki .začetnice {
+    background-color: #12142A;
+    border-radius: 100%;
+    border: 2px solid #B8B6FF;
+    padding: 25px 20px;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.profilWrapper .osnovniPodatki .ime {
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: -20px;
+}
+
+.profilWrapper .osnovniPodatki .email {
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.profilWrapper .nastavitveProfila {
+    background-color: #B8B6FF;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    z-index: 1;
+    margin-top: -30px;
+    flex-grow: 1;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilWrapper .nastavitveProfila .urejanjePodatkov {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.profilWrapper .nastavitveProfila .urejanjePodatkov .labelInputWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.profilWrapper .nastavitveProfila .urejanjePodatkov .labelInputWrapper label {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.profilWrapper .nastavitveProfila .urejanjePodatkov .labelInputWrapper input {
+    margin-bottom: 15px;
+}
+
+.profilWrapper .nastavitveProfila .urejanjePodatkov .labelInputWrapper input::placeholder {
+    color: #12142A80;
+}
+
+.profilWrapper .nastavitveProfila .urejanjePodatkov .imePriimekInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.profilWrapper .nastavitveProfila .urejanjePodatkov input {
+    background-color: #B8B6FF;
+    border: 2px solid #12142A;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.profilWrapper .nastavitveProfila .urejanjePodatkov button {
+    background-color: #12142A;
+    color: #B8B6FF;
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.profilWrapper .nastavitveProfila .upravljanjeRačuna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.profilWrapper .nastavitveProfila .upravljanjeRačuna #odjaviSeGumb,
+.profilWrapper .nastavitveProfila .upravljanjeRačuna #izbrišiRačunGumb {
+    background-color: #B8B6FF;
+    border: 2px solid #12142A;
+    color: #12142A;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profilWrapper .nastavitveProfila .upravljanjeRačuna #izbrišiRačunGumb {
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    margin-top: 10px;
+}

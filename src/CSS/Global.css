@@ -5,6 +5,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Outfit", sans-serif;
+}
+
+button, input, textarea {
+    font-family: inherit;
 }
 
 button {
@@ -12,10 +17,6 @@ button {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-}
-
-h1 {
-    color: #B8B6FF;
 }
 
 a {
@@ -29,14 +30,14 @@ a:hover {
 
 .domovWrapper,
 .statistikeWrapper,
-.novVnosWrapper {
+.novVnosWrapper,
+.profilWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
     box-sizing: border-box;
-    padding-top: 40px;
     padding-bottom: 150px;
 }
 
@@ -51,4 +52,19 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 80%;
+}
+
+.napaka {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: #FF000080;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.napaka p {
+    margin: 10px;
 }
